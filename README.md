@@ -5,9 +5,8 @@
 <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&duration=3000&pause=1000&color=A177F7&center=true&vCenter=true&width=600&lines=Building+Digital+Architectures...;Full+Stack+Developer;React+Native+%2B+Django;Pet+Lover+%F0%9F%90%B1" />
 
 <br/>
-
-<img src="github-skyline.svg" width="100%" />
-
+# 🌌 My Galactic Contributions
+[![](github-starfield.svg)](https://github.com/lowlighter/metrics)
 </div>
 
 ---
