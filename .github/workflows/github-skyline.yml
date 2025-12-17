@@ -1,8 +1,8 @@
 name: Generate Starfield Metrics
 on:
   schedule:
-    - cron: "0 0 * * *" # 每天午夜自动更新
-  workflow_dispatch: # 允许手动触发
+    - cron: "0 0 * * *"
+  workflow_dispatch:
   push:
     branches: ["main", "master"]
 
@@ -15,20 +15,21 @@ jobs:
       - uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
-          filename: github-starfield.svg # 输出文件名
-          base: "" # 隐藏基础的统计信息，让背景更纯净
+          filename: github-starfield.svg
+          base: "" 
           
-          # 核心插件：星际航行
-          plugin_starfield: yes
-          # 动画持续时间（数字越大，星星飞行速度感知越平滑）
-          # 设置为 30s 到 60s 之间效果最佳
-          # plugin_starfield_duration: 45s 
-
-          # 可选：如果你想在星空中带上你最近 Star 的项目，取消下面两行注释
-          # plugin_stars: yes
-          # plugin_stars_limit: 3
-
-          # 全局配置
-          config_animations: yes # 必须开启，否则星星是静止的
+          # 核心配置：使用 stars 插件触发星空效果
+          plugin_stars: yes
+          plugin_stars_limit: 4
+          
+          # 关键点：这里通过额外的配置开启星空动画
+          # 如果 action.yml 依然报错，请删除下面这一行，
+          # 并在 config_order 里包含 starfield
+          # plugin_starfield: yes 
+          
+          # 备选稳定方案：使用 base 插件的扩展功能
+          config_animations: yes
           config_timezone: Asia/Shanghai
-          committer_message: "chore: update starfield metrics"
+          
+          # 强制通过实验性功能开启（如果标准输入被拦截）
+          experimental_features: --all
