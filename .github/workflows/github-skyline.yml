@@ -1,7 +1,7 @@
 name: Generate 3D Skyline City
 on:
   schedule:
-    - cron: "0 0 * * *" # 每天午夜运行
+    - cron: "0 0 * * *"
   workflow_dispatch:
   push:
     branches: ["main", "master"]
@@ -15,14 +15,13 @@ jobs:
       - uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
-          filename: github-skyline.svg # 保持文件名不变，方便引流
+          filename: github-skyline.svg
           base: "" 
           
-          # 启用 3D 城市插件
+          # 启用 3D 城市视图
           plugin_isocalendar: yes
-          plugin_isocalendar_duration: full-year # 显示一年的贡献高度
+          plugin_isocalendar_duration: full-year
           
-          # 界面定制
+          # 修正后的颜色配置 (采用标准字符串格式)
           config_timezone: Asia/Shanghai
-          # 这里的配色会让你的 3D 建筑呈现出紫色和暗色调
-          config_colors: ["#161b22", "#4c2885", "#6a39b3", "#8a51e1", "#A177F7"]
+          config_colors: '["#161b22", "#4c2885", "#6a39b3", "#8a51e1", "#A177F7"]'
