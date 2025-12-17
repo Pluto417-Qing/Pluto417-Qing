@@ -26,6 +26,6 @@ jobs:
           # 2. 启用全局动画配置
           config_animations: yes
           
-          # 修正后的颜色配置
+          # 仅保留有效的配置参数。
+          # 'config_colors' 因不被识别已被移除。
           config_timezone: Asia/Shanghai
-          config_colors: '["#161b22", "#4c2885", "#6a39b3", "#8a51e1", "#A177F7"]'
