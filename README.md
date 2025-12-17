@@ -14,7 +14,7 @@
 - 🌱 Building with **React Native, Django, Python**
 - 🐱 Passionate about creating solutions for pet lovers
 - 💡 Love exploring AI/ML and mobile development
-- 📫 Reach me at: **[Your Email]**
+- 📫 Reach me at: **soverreigndragon@gmail.com**
 
 ---
 
@@ -38,20 +38,6 @@
 
 ---
 
-## 📊 GitHub Stats
-
-<div align="center">
-  
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Pluto417-Qing&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&title_color=A177F7&icon_color=A177F7)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Pluto417-Qing&layout=compact&theme=radical&hide_border=true&bg_color=0D1117&title_color=A177F7)
-
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=Pluto417-Qing&theme=radical&hide_border=true&background=0D1117&ring=A177F7&fire=A177F7&currStreakLabel=A177F7)
-
-</div>
-
----
-
 ## 🎯 Featured Projects
 
 ### 🐾 [Pet Love](https://github.com/Pluto417-Qing/pet_love)
@@ -63,16 +49,6 @@ A comprehensive mobile application for pet care, featuring:
 - 🏆 Gamification with badges and rankings
 
 **Tech:** React Native, TypeScript, Expo, Tamagui, Django, PostgreSQL
-
----
-
-## 🏆 GitHub Trophies
-
-<div align="center">
-  
-![Trophies](https://github-profile-trophy.vercel.app/?username=Pluto417-Qing&theme=radical&no-frame=true&no-bg=true&margin-w=4&row=1)
-
-</div>
 
 ---
 
@@ -106,11 +82,3 @@ A comprehensive mobile application for pet care, featuring:
 </div>
 
 ---
-
-<div align="center">
-  
-### 🐱 Thanks for visiting! Have a great day! 🐱
-
-![Visitor Count](https://profile-counter.glitch.me/Pluto417-Qing/count.svg)
-
-</div>
