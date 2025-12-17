@@ -1,49 +1,49 @@
 <div align="center">
-  
-# 👋 Hi there, I'm Pluto417-Qing!
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=32&duration=2800&pause=2000&color=A177F7&center=true&vCenter=true&width=940&lines=Welcome+to+my+GitHub+Profile!+%F0%9F%91%8B;Full+Stack+Developer+%F0%9F%92%BB;Pet+Lover+%F0%9F%90%B1;Always+Learning+New+Things+%F0%9F%9A%80" alt="Typing SVG" />
+<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=1,2,2,30&height=180&section=header&text=Pluto417-Qing&fontSize=70&fontColor=fff&animation=fadeIn&fontAlignY=35&desc=Code%20is%20Life%20%7C%20Pet%20Lover&descAlignY=60&descSize=20" width="100%" />
+
+<a href="https://git.io/typing-svg">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=20&duration=3000&pause=1000&color=A177F7&center=true&vCenter=true&width=500&lines=Full+Stack+Developer+%F0%9F%92%BB;Simulating+Life+with+Python;Building+Pet+Love+App+%F0%9F%90%BE" alt="Typing SVG" />
+</a>
+
+<br/><br/>
+
+<img src="https://github.com/Pluto417-Qing/Pluto417-Qing/blob/output/github-contribution-grid-snake.svg" alt="Life Game Animation" width="100%"/>
 
 </div>
 
 ---
 
-## 🚀 About Me
-
-- 🔭 Currently working on **Pet Love** - A comprehensive pet care application
-- 🌱 Building with **React Native, Django, Python**
-- 🐱 Passionate about creating solutions for pet lovers
-- 💡 Love exploring AI/ML and mobile development
-- 📫 Reach me at: **soverreigndragon@gmail.com**
----
-
-## 📈 Contribution Graph
+<table border="0" width="100%">
+  <tr>
+    <td width="55%" valign="top">
+      <h3>🚀 About Me</h3>
+      <ul>
+        <li>🔭 Project: <b>Pet Love App</b></li>
+        <li>🌱 Stack: <b>React Native, Django, Python</b></li>
+        <li>🧬 Passion: <b>AI, Algorithms & Life</b></li>
+        <li>📫 Contact: <b>soverreigndragon@gmail.com</b></li>
+      </ul>
+      <br/>
+      <h3>🛠️ Tech Stack</h3>
+      <p>
+        <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
+        <img src="https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white" />
+        <img src="https://img.shields.io/badge/React_Native-20232A?style=flat-square&logo=react&logoColor=61DAFB" />
+        <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" />
+      </p>
+    </td>
+    <td width="45%" valign="top">
+      <div align="center">
+        <img src="https://github-readme-stats.vercel.app/api?username=Pluto417-Qing&show_icons=true&theme=tokyonight&hide_border=true&bg_color=00000000&count_private=true" width="100%" />
+        <br/>
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Pluto417-Qing&layout=compact&theme=tokyonight&hide_border=true&bg_color=00000000" width="100%" />
+      </div>
+    </td>
+  </tr>
+</table>
 
 <div align="center">
-  
-![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=Pluto417-Qing&theme=react-dark&hide_border=true&area=true)
-
+  <br/>
+  <img src="https://img.shields.io/badge/Status-Coding_the_Future-blueviolet?style=for-the-badge"/>
 </div>
-
----
-
-## 💭 Random Dev Quote
-
-<div align="center">
-
-![Quote](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
-
-</div>
-
----
-
-## 🌐 Connect with Me
-
-<div align="center">
-  
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Pluto417-Qing)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:your.email@example.com)
-
-</div>
-
----
