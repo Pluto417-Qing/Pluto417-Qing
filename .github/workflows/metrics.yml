@@ -1,22 +1,48 @@
-name: Metrics
+#.github/workflows/metrics.yml
+name: GitHub Metrics Generation
+
 on:
-  schedule: [{cron: "0 0 * * *"}]
+  # Schedule: Run automatically every day at 00:00 UTC to ensure data freshness
+  schedule:
+    - cron: "0 0 * * *" # Runs every day at 00:00 UTC
+  # Manual Trigger: Allows you to run the workflow manually from the Actions tab
   workflow_dispatch:
-  push: {branches: ["master", "main"]}
+
 jobs:
   github-metrics:
-    runs-on: ubuntu-latest
+    # Use a standard, modern runner environment
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    
+    # Crucial step: The workflow requires 'write' permission to commit the generated SVG file
     permissions:
       contents: write
+
     steps:
       - uses: lowlighter/metrics@latest
         with:
+          # CORE PARAMETER: The Personal Access Token (PAT)
+          # IMPORTANT: Store this token as a repository secret named METRICS_TOKEN. 
+          # It requires scopes (e.g., 'public_repo') to retrieve full data. 
           token: ${{ secrets.METRICS_TOKEN }}
-          base: "" # 只显示插件内容，不显示基础页眉
           
-          # 正确的康威生命游戏插件参数
-          plugin_ani_life: yes
-          plugin_ani_life_limit: 10 # 演化次数
-          plugin_ani_life_days: 365 # 统计过去一年的数据作为细胞
+          # OUTPUT CONFIGURATION
+          # The generated SVG will be committed to the root of your repository
+          filename: github-metrics.svg
+          # Dynamically set the user to the repository owner
+          user: ${{ github.repository_owner }}
           
-          config_timezone: Asia/Shanghai
+          # BASE SECTIONS: Enable standard visualizations
+          base: header, activity, community, repositories, metadata
+          
+          # PLUGIN 1: Languages Activity (Replaces complex animations with meaningful data) [2]
+          plugin_languages: yes
+          plugin_languages_limit: 8
+          plugin_languages_threshold: 2%
+          plugin_languages_colors: github
+          
+          # PLUGIN 2: Coding Habits (Show activity time distribution) [2]
+          plugin_habits: yes
+          plugin_habits_charts: yes
+          plugin_habits_from: 200 # Analyze contributions over the last 200 days
+          plugin_habits_days: 7 # Analyze most recent 7 days
