@@ -6,8 +6,7 @@
 
 <br/>
 
-<img src="https://raw.githubusercontent.com/Pluto417-Qing/Pluto417-Qing/main/github-skyline.gif" alt="GitHub 3D City" width="100%" />
-
+<img src="github-skyline.gif" alt="GitHub 3D City" width="100%" />
 </div>
 
 ---
