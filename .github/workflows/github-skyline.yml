@@ -15,13 +15,17 @@ jobs:
       - uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
-          filename: github-skyline.svg
-          base: "" 
-          
+          # 1. 更改文件名为.gif 以支持动画输出
+          filename: github-skyline.gif 
+          base: ""
+
           # 启用 3D 城市视图
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
           
-          # 修正后的颜色配置 (采用标准字符串格式)
+          # 2. 启用全局动画配置
+          config_animations: yes
+          
+          # 修正后的颜色配置
           config_timezone: Asia/Shanghai
           config_colors: '["#161b22", "#4c2885", "#6a39b3", "#8a51e1", "#A177F7"]'
