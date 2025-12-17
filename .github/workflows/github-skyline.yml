@@ -1,40 +1,21 @@
-#.github/workflows/github-skyline.yml
 name: Generate GitHub Skyline
-
 on:
-  # 计划任务：每天自动更新，确保天际线图反映最新贡献
-  schedule:
-    - cron: "0 0 * * *" # UTC 00:00 运行
-  # 手动触发：随时可以在 Actions 标签页手动运行
+  schedule: [{cron: "0 0 * * *"}]
   workflow_dispatch:
-
+  push: {branches: ["main", "master"]}
 jobs:
   skyline-metrics:
-    runs-on: ubuntu-24.04
-    timeout-minutes: 10
-    
-    # 关键权限：需要写入权限才能提交生成的SVG文件
+    runs-on: ubuntu-latest
     permissions:
       contents: write
-
     steps:
       - uses: lowlighter/metrics@latest
         with:
-          # 核心参数
-          # 确保您的 Personal Access Token (PAT) 秘密名称为 METRICS_TOKEN，并拥有 'public_repo' 权限。
           token: ${{ secrets.METRICS_TOKEN }}
-          user: ${{ github.repository_owner }}
-          
-          # 输出配置
-          # 文件名变更为 github-skyline.svg，与 README.md 中的引用保持一致
           filename: github-skyline.svg
-          
-          # 基础配置：我们只需要显示天际线，因此禁用其他基础元素
-          base: "" # 禁用基础统计信息
-          
-          # 插件：启用 Skyline 插件
-          plugin_skyline: yes # 启用 GitHub 天际线/城市图 
-          
-          # 额外的定制选项 (可选)
-          # plugin_skyline_city: yes # 启用城市模式，效果更像城市而非山脉 
-          # config_animations: yes # 重新启用某些插件支持的轻量级动画
+          base: "" # 隐藏不需要的基础信息
+          plugin_skyline: yes
+          plugin_skyline_year: 2024 # 如果2025数据还不够，2024的天际线最壮观
+          plugin_skyline_frames: 60  # 生成有 3D 旋转感的动画图
+          plugin_skyline_quality: 1
+          config_timezone: Asia/Shanghai
