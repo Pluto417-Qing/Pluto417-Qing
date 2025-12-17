@@ -6,7 +6,8 @@
 
 <br/>
 
-<img src="github-skyline.gif" alt="GitHub 3D City" width="100%" />
+<img src="github-skyline.svg" width="100%" />
+
 </div>
 
 ---
