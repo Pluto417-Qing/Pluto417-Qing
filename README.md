@@ -6,11 +6,6 @@
 
 <br/>
 
-<img src="github-metrics.svg" alt="Conway's Game of Life" width="100%" />
-
-</div>
-
----
 
 ## 📊 Performance Metrics
 <div align="center">
