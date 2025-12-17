@@ -1,8 +1,8 @@
 name: Generate 3D Skyline City
 on:
   schedule:
-    - cron: "0 0 * * *"
-  workflow_dispatch:
+    - cron: "0 0 * * *" # 每天午夜自动更新
+  workflow_dispatch: # 允许手动触发
   push:
     branches: ["main", "master"]
 
@@ -14,18 +14,21 @@ jobs:
     steps:
       - uses: lowlighter/metrics@latest
         with:
+          # 基础配置
           token: ${{ secrets.METRICS_TOKEN }}
-          # 1. 更改文件名为.gif 以支持动画输出
-          filename: github-skyline.gif 
-          base: ""
-
-          # 启用 3D 城市视图
-          plugin_isocalendar: yes
-          plugin_isocalendar_duration: full-year
+          filename: github-skyline.svg # 必须是 .svg 才能被 GitHub 识别并显示动画
+          base: "" # 只保留插件内容，不显示基础统计信息
           
-          # 2. 启用全局动画配置
-          config_animations: yes
-          
-          # 仅保留有效的配置参数。
-          # 'config_colors' 因不被识别已被移除。
+          # 时区设置
           config_timezone: Asia/Shanghai
+          
+          # 3D 城市视图（Isocalendar 插件）
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year # 显示整年数据
+          
+          # 动画配置
+          config_animations: yes # 开启全局动画
+          
+          # 杂项配置
+          config_order: isocalendar # 确保插件顺序正确
+          committer_message: "chore: update skyline city metrics"
