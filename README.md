@@ -9,7 +9,6 @@
 
 ### 🚀 About Me
 
-- 🔭 **Project:** Currently building [Pet Love] - A comprehensive pet care app.
 - 🌱 **Learning:** Diving deep into Vibe Coding and Agent building.
 - 📫 **Contact:** soverreigndragon@gmail.com
 
